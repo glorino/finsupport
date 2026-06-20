@@ -57,11 +57,11 @@ export default function HomePage() {
   const heroWords = [t("landing.heroWords.ticket"), t("landing.heroWords.query"), t("landing.heroWords.complaint"), t("landing.heroWords.request")];
 
   const features = [
-    { num: "01", title: t("landing.features.intake.title"), desc: t("landing.features.intake.desc"), color: "blue", gradient: "from-blue-500 to-blue-600", bg: "bg-blue-50", border: "border-blue-100", text: "text-blue-600", iconBg: "bg-blue-500", bullets: (t("landing.features.intake.bullets") || "").split(",").map((s: string) => s.trim()) || ["Auto-classification", "Smart routing", "Instant response"], feed: [{ icon: "✓", text: "Classified", detail: "Billing inquiry" }, { icon: "✓", text: "Routed", detail: "Urgent issue → Tier 2" }, { icon: "✓", text: "Resolved", detail: "Password reset" }] },
-    { num: "02", title: t("landing.features.inbox.title"), desc: t("landing.features.inbox.desc"), color: "emerald", gradient: "from-emerald-500 to-emerald-600", bg: "bg-emerald-50", border: "border-emerald-100", text: "text-emerald-600", iconBg: "bg-emerald-500", bullets: (t("landing.features.inbox.bullets") || "").split(",").map((s: string) => s.trim()) || ["6 channels unified", "Real-time sync", "Full context"], feed: [{ icon: "✓", text: "WhatsApp", detail: "Order status inquiry" }, { icon: "✓", text: "Email", detail: "Refund request received" }, { icon: "✓", text: "Web Chat", detail: "New visitor from Lagos" }] },
+    { num: "01", title: t("landing.features.intake.title"), desc: t("landing.features.intake.desc"), color: "blue", gradient: "from-blue-500 to-blue-600", bg: "bg-blue-50", border: "border-blue-100", text: "text-blue-600", iconBg: "bg-blue-500", bullets: (t("landing.features.intake.bullets") || "").split(",").map((s: string) => s.trim()) || ["Transaction alerts", "Smart routing", "Instant resolution"], feed: [{ icon: "✓", text: "Classified", detail: "Payment dispute" }, { icon: "✓", text: "Routed", detail: "Fraud alert → Compliance" }, { icon: "✓", text: "Resolved", detail: "Account verification" }] },
+    { num: "02", title: t("landing.features.inbox.title"), desc: t("landing.features.inbox.desc"), color: "emerald", gradient: "from-emerald-500 to-emerald-600", bg: "bg-emerald-50", border: "border-emerald-100", text: "text-emerald-600", iconBg: "bg-emerald-500", bullets: (t("landing.features.inbox.bullets") || "").split(",").map((s: string) => s.trim()) || ["6 channels unified", "Real-time sync", "Full context"], feed: [{ icon: "✓", text: "WhatsApp", detail: "Transaction inquiry" }, { icon: "✓", text: "Email", detail: "Dispute escalation" }, { icon: "✓", text: "Web Chat", detail: "New account holder from Lagos" }] },
     { num: "03", title: t("landing.features.sentiment.title"), desc: t("landing.features.sentiment.desc"), color: "purple", gradient: "from-purple-500 to-purple-600", bg: "bg-purple-50", border: "border-purple-100", text: "text-purple-600", iconBg: "bg-purple-500", bullets: (t("landing.features.sentiment.bullets") || "").split(",").map((s: string) => s.trim()) || ["Real-time scoring", "Trend alerts", "Churn prediction"], feed: [{ icon: "✓", text: "Detected", detail: "Frustrated tone — escalated" }, { icon: "✓", text: "Scored", detail: "Positive (0.92) — closed" }, { icon: "!", text: "Alert", detail: "Negative trend on WhatsApp" }] },
-    { num: "04", title: t("landing.features.sla.title"), desc: t("landing.features.sla.desc"), color: "amber", gradient: "from-amber-500 to-amber-600", bg: "bg-amber-50", border: "border-amber-100", text: "text-amber-600", iconBg: "bg-amber-500", bullets: (t("landing.features.sla.bullets") || "").split(",").map((s: string) => s.trim()) || ["Auto-escalation", "SLA tracking", "Compliance reporting"], feed: [{ icon: "✓", text: "Enforced", detail: "SLA 2h met for SSV-1234" }, { icon: "✕", text: "Breached", detail: "SSV-1230 exceeded 4h" }, { icon: "✓", text: "Escalated", detail: "SSV-1228 → Manager" }] },
-    { num: "05", title: t("landing.features.knowledge.title"), desc: t("landing.features.knowledge.desc"), color: "cyan", gradient: "from-cyan-500 to-cyan-600", bg: "bg-cyan-50", border: "border-cyan-100", text: "text-cyan-600", iconBg: "bg-cyan-500", bullets: (t("landing.features.knowledge.bullets") || "").split(",").map((s: string) => s.trim()) || ["Auto-ingestion", "Semantic search", "AI-powered answers"], feed: [{ icon: "✓", text: "Indexed", detail: "12 new articles processed" }, { icon: "✓", text: "Matched", detail: "Q: reset password → A: #42" }, { icon: "✓", text: "Auto-resolved", detail: "Shipping policy question" }] },
+    { num: "04", title: t("landing.features.sla.title"), desc: t("landing.features.sla.desc"), color: "amber", gradient: "from-amber-500 to-amber-600", bg: "bg-amber-50", border: "border-amber-100", text: "text-amber-600", iconBg: "bg-amber-500", bullets: (t("landing.features.sla.bullets") || "").split(",").map((s: string) => s.trim()) || ["Auto-escalation", "SLA tracking", "Compliance reporting"], feed: [{ icon: "✓", text: "Enforced", detail: "SLA 2h met for FIN-1234" }, { icon: "✕", text: "Breached", detail: "FIN-1230 exceeded 4h" }, { icon: "✓", text: "Escalated", detail: "FIN-1228 → Manager" }] },
+    { num: "05", title: t("landing.features.knowledge.title"), desc: t("landing.features.knowledge.desc"), color: "cyan", gradient: "from-cyan-500 to-cyan-600", bg: "bg-cyan-50", border: "border-cyan-100", text: "text-cyan-600", iconBg: "bg-cyan-500", bullets: (t("landing.features.knowledge.bullets") || "").split(",").map((s: string) => s.trim()) || ["Auto-ingestion", "Semantic search", "AI-powered answers"], feed: [{ icon: "✓", text: "Indexed", detail: "12 new articles processed" }, { icon: "✓", text: "Matched", detail: "Q: reset password → A: #42" }, { icon: "✓", text: "Auto-resolved", detail: "KYC policy question" }] },
     { num: "06", title: t("landing.features.analytics.title"), desc: t("landing.features.analytics.desc"), color: "rose", gradient: "from-rose-500 to-rose-600", bg: "bg-rose-50", border: "border-rose-100", text: "text-rose-600", iconBg: "bg-rose-500", bullets: (t("landing.features.analytics.bullets") || "").split(",").map((s: string) => s.trim()) || ["Live dashboards", "Export reports", "Custom metrics"], feed: [{ icon: "✓", text: "Updated", detail: "Resolution rate: 87%" }, { icon: "!", text: "Alert", detail: "CSAT dipped below 4.0" }, { icon: "✓", text: "Report", detail: "Weekly summary generated" }] },
   ];
 
@@ -156,7 +156,7 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
-                {/* Recent tickets */}
+                {/* Recent cases */}
                 <div className="space-y-2">
                   {recentTickets.slice(0, 3).map((rt: any, i: number) => (
                     <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-white/[0.04] border border-white/[0.05]">
@@ -169,7 +169,7 @@ export default function HomePage() {
                         <span className="text-xs font-mono text-blue-300/80">{rt.ticket_number}</span>
                         <span className="text-xs text-gray-300 truncate">{rt.subject}</span>
                       </div>
-                      <span className="text-[10px] text-gray-500 shrink-0 ml-2">{rt.customer_name || "Customer"}</span>
+                      <span className="text-[10px] text-gray-500 shrink-0 ml-2">{rt.customer_name || "Account Holder"}</span>
                     </div>
                   ))}
                   {recentTickets.length === 0 && (
@@ -237,15 +237,15 @@ export default function HomePage() {
                 { name: "Paystack", accent: "hover:shadow-blue-500/5" },
                 { name: "Kuda", accent: "hover:shadow-blue-500/5" },
                 { name: "PiggyVest", accent: "hover:shadow-green-500/5" },
-                { name: "Chipper", accent: "hover:shadow-purple-500/5" },
                 { name: "Moniepoint", accent: "hover:shadow-blue-500/5" },
-                { name: "FairMoney", accent: "hover:shadow-amber-500/5" },
-                { name: "Glovo", accent: "hover:shadow-green-500/5" },
+                { name: "Opay", accent: "hover:shadow-blue-500/5" },
+                { name: "Flutterwave", accent: "hover:shadow-blue-500/5" },
+                { name: "VBank", accent: "hover:shadow-blue-500/5" },
                 { name: "Wema Bank", accent: "hover:shadow-red-500/5" },
-                { name: "Arm", accent: "hover:shadow-indigo-500/5" },
-                { name: "Tolaram", accent: "hover:shadow-orange-500/5" },
-                { name: "Chowdeck", accent: "hover:shadow-green-500/5" },
-                { name: "Yellow Card", accent: "hover:shadow-yellow-500/5" },
+                { name: "Sterling Bank", accent: "hover:shadow-green-500/5" },
+                { name: "FairMoney", accent: "hover:shadow-amber-500/5" },
+                { name: "Carbon", accent: "hover:shadow-purple-500/5" },
+                { name: "Cowrywise", accent: "hover:shadow-yellow-500/5" },
               ].map((company) => (
                 <div key={company.name} className={`flex items-center justify-center h-[78px] bg-white/70 backdrop-blur-sm hover:bg-white/90 transition-all duration-300 group cursor-default ${company.accent} hover:shadow-lg`}>
                   <span className="text-[13px] font-semibold text-gray-400/80 tracking-wide group-hover:text-gray-500 group-hover:tracking-wider transition-all duration-300">{company.name}</span>
@@ -400,7 +400,7 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-emerald-400" />
-                        <span className="text-xs text-gray-400 font-medium">{channelCounts[ch.stats] || 0} tickets</span>
+                        <span className="text-xs text-gray-400 font-medium">{channelCounts[ch.stats] || 0} cases</span>
                       </div>
                     </div>
                     <h3 className="text-lg font-bold mb-1">{ch.name}</h3>
