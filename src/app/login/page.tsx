@@ -7,10 +7,10 @@ import { LangToggle } from "@/components/lang-toggle";
 import { useLang } from "@/lib/i18n/context";
 
 const demoLogins = [
-  { email: "admin@finsupport.com", password: "admin123", role: "Super Admin", name: "Alex Johnson", avatar: "AJ", gradient: "from-violet-500 to-indigo-600" },
-  { email: "sarah@finsupport.com", password: "demo123", role: "Manager", name: "Sarah Kim", avatar: "SK", gradient: "from-emerald-500 to-teal-600" },
-  { email: "tom@finsupport.com", password: "demo123", role: "Agent", name: "Tom Chen", avatar: "TC", gradient: "from-blue-500 to-cyan-600" },
-  { email: "viewer@finsupport.com", password: "demo123", role: "Viewer", name: "Jordan Lee", avatar: "JL", gradient: "from-gray-500 to-slate-600" },
+  { email: "tunde@finsupport.com", password: "admin123", role: "Super Admin", name: "Tunde Olaniyan", avatar: "TO", gradient: "from-violet-500 to-indigo-600" },
+  { email: "folake@finsupport.com", password: "demo123", role: "Manager", name: "Folake Balogun", avatar: "FB", gradient: "from-emerald-500 to-teal-600" },
+  { email: "emeka@finsupport.com", password: "demo123", role: "Agent", name: "Emeka Chukwu", avatar: "EC", gradient: "from-blue-500 to-cyan-600" },
+  { email: "dayo@finsupport.com", password: "demo123", role: "Viewer", name: "Dayo Coker", avatar: "DC", gradient: "from-gray-500 to-slate-600" },
 ];
 
 export default function LoginPage() {
